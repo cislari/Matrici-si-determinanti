@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #fa9624;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #ffb835;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+  text-align: center;
+}
+
+.content1 {
+    padding: 16px;
+  text-align: center;
+}
+
+.special {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Determinanți de ordinul 2 și 3</h2>
+  <p>Proprietățile determinanților</p>
+</div>
+
+<div id="navbar">
+  <a href="Teorie.html">Teorie</a>
+  <a href="Exemple.html" class="active">Exemple</a>
+  <a href="Exersare.html">Exersare</a>
+  <a href="java:void(0);" class="icon">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div class="content">
+  <h3>Determinanți de ordinul 2</h3>
+  <p>exemple rezolvate</p>
+ </div>
+<div class="special"><img src="Images\Picture1.jpg"></div><br>
+<img src="Images\Picture3.jpg" width=520px height=270px>
+<img src="Images\Picture4.jpg" width=520px height=270px>
+<img src="Images\Picture5.jpg" width=520px height=270px>
+<div class="content1">
+    <h3>Determinanți de ordinul 3</h3>
+    <p>exemple rezolvate - regula triunghiului</p>
+</div>
+<img src="Images\Picture7.jpg" width=700px height=500px>
+<img src="Images\Picture8.jpg" width=850px height=500px>
+<div class="special"><img src="Images\Picture9.jpg"></div><br>
+<img src="Images\Picture11.jpg" width=490px height=270px>
+<img src="Images\Picture12.jpg" width=490px height=270px>
+<img src="Images\Picture13.jpg" width=585px height=270px>
+<div class="content1">
+    <h3>Determinanți de ordinul 3</h3>
+    <p>exemple rezolvate - regula lui Sarrus</p>
+</div>
+<div class="special"><img src="Images\Picture14.jpg"></div><br>
+<img src="Images\Picture15.jpg" width=520px height=270px>
+<img src="Images\Picture17.jpg" width=520px height=270px>
+<img src="Images\Picture16.jpg" width=520px height=270px>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

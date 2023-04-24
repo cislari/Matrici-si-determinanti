@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #fa9624;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #ffb835;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Determinanți de ordinul 2 și 3</h2>
+  <p>Proprietățile determinanților</p>
+</div>
+
+<div id="navbar">
+  <a href="Teorie.html">Teorie</a>
+  <a href="Exemple.html">Exemple</a>
+  <a href="Exersare.html">Exersare</a>
+  <a href="java:void(0);" class="icon">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div class="content">
+  <h3>EDUCAȚIE ONLINE FĂRĂ HOTARE 2022-2023</h3>
+  <h5>Instruirea asistată de calculator la orele de matematică, Liceul Teoretic "Dante Alighieri"</h5><br>
+  <h5>Site realizat de:Cîșlari Bianca</h5>
+    <h5>Botnari Alina</h5>
+    <h5>Zosim Patricia</h5>
+    <h5>Cotorobai Selina</h5>
+  </p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
